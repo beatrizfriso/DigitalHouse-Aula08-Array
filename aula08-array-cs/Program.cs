@@ -39,7 +39,7 @@ string listarTodosOsFilmesComSeuIndiceNaLista()
 
     for (var index = 0; index < listaDeFilmes.Length; index++)
     {
-        lista += index + " - " listaDeFilmes[index] + Environment.NewLine; 
+        lista += index + " - " + listaDeFilmes[index] + Environment.NewLine; 
     }
 
     return lista;
