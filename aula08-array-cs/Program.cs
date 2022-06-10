@@ -52,16 +52,16 @@ Console.WriteLine("------ Resultados da Atividade ------");
 Console.WriteLine($"1. Lista de todos os filmes separados por ponto e vírgula {apresentaTodosOsFilmesSeparadosPorPontoVirgula()}");
 
 // Retorna o número 7.
-Console.WriteLine($"2. Retorna a quantidade de filmes da lista", quantidadeTotalDeFilmes());
+Console.WriteLine($"2. Retorna a quantidade de filmes da lista {quantidadeTotalDeFilmes()}");
 
 // Se o índice for 0, retorna Clube dos Cinco;
-Console.WriteLine("3. Buscar um filme pelo indice", buscarNomeDoFilmePeloIndice(0));
+Console.WriteLine($"3. Buscar um filme pelo indice {buscarNomeDoFilmePeloIndice(0)}");
 
 // Se o filme for Sexta-feira 13th, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky IV; Conan, o Bárbaro; Highlander, Sexta-feira 13th
-Console.WriteLine("4. Adiciona um filme pelo nome", adicionaUmNovoFilmePeloSeuNome("Sexta-feira 13th"));
+Console.WriteLine($"4. Adiciona um filme pelo nome {string.Join("; ", adicionaUmNovoFilmePeloSeuNome("Sexta-feira 13th"))}");
 
 // Se o índice for 3 e o nome for atualizado para Rocky III, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky III; Conan, o Bárbaro; Highlander, Sexta-feira 13th
-Console.WriteLine("5. Atualizar um filme pelo seu índice", atualizarUmFilmePeloSeuIndice(3, "Rocky III"));
+Console.WriteLine($"5. Atualizar um filme pelo seu índice {string.Join("; ", atualizarUmFilmePeloSeuIndice(3, "Rocky III"))}");
 
 // Retorna 
 // 0 - Clube dos Cinco 
@@ -71,6 +71,6 @@ Console.WriteLine("5. Atualizar um filme pelo seu índice", atualizarUmFilmePelo
 // 4 - Conan, o Bárbaro
 // 5 - Highlander
 // 6 - Sexta-feira 13th
-Console.WriteLine("6. Listar todos os filmes com seu indice/posicao na lista.", listarTodosOsFilmesComSeuIndiceNaLista());
+Console.WriteLine($"6. Listar todos os filmes com seu indice/posicao na lista. {listarTodosOsFilmesComSeuIndiceNaLista()}");
 
 
